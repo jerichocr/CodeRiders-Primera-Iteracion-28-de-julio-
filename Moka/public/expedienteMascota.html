@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/styles/hojaEstiloAdministrativa.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+<!-- Inicio del area de menu superior -->
+
+<div class="wrapperSuperior">
+
+
+    <div class="logoSuperior">
+        <img class="logoMoka" src="../public/img/logoMokaPequeno.PNG">
+    </div>
+
+    <div class="barraUsuario">
+        <div><a class="Activoa" href=""><img class="logoUsuario" src="../public/img/usuario.png">Usuario Activo</a></div>
+    </div>
+
+    <div class="barraBuscar">
+        <input type="text" placeholder="  &#128269; Buscar">
+    </div>
+
+</div>
+
+    <div class="wrapperCentral">
+
+        <!-- Inicio del area de menu lateral -->
+        <div class="menuLateral">
+            <div>
+                <div class="barraLateral"><a href="citasNuevas.html"><img class="iconosBarra" src="../public/img/cita.png"> Cita nueva</a></div>
+                <div class="barraLateral"><a href="reservasNuevas.html"><img class="iconosBarra" src="../public/img/hotelMas.png"> Reserva nueva</a></div>
+                <div class="barraLateral"><a href="perfilCliente.html"><img class="iconosBarra" src="../public/img/cliente.png"> Cliente</a></div>
+                <div class="barraLateral"><a href="calendarioCitas.html"><img class="iconosBarra" src="../public/img/calendario.png"> Calendario citas</a></div>
+                <div class="barraLateral"><a href="calendarioReservas.html"><img class="iconosBarra" src="../public/img/hotel.png"> Calendario reservas</a></div>
+
+            </div>
+        </div>
+
+        <!-- Inicio del area usuario en la que se agrega el codigo dentro del div -->
+        <div class="areaUsuario">
+            <h1> Expediente Mascota </h1>
+
+            <div class="wrapper30-65">
+
+                <div class="columna65">
+
+                    <div>
+                     <label for="text"> Nombre mascota:</label><br>
+                    <input type="text" id="mascota">
+                    </div>
+
+                    <div >
+                    <label for="text"> Dueño:</label><br>
+                    <input type="text" id="dueno">
+                    </div>
+
+                    <div >
+                    <label for="text"> Edad:</label><br>
+                    <input type="text" id="edad">
+                    </div>
+
+                    <div>
+                     <label for="text"> Último peso:</label><br>
+                    <input type="text" id="peso">
+                    </div>
+
+                    <div>
+                        <h2>Últimas citas de la mascota</h2>
+                        <table class="tablas">
+                            <tr>
+                              <th>Fecha</th>
+                              <th> Comentario </th>
+                            </tr>
+                            <tr>
+                              <td>22 julio 2022</td>
+                              <td>Dolor de estomago agudo</td>
+                            </tr>
+                            <tr>
+                              <td>03 enero 2021</td>
+                              <td>Limpieza dental</td>
+                            </tr>
+                          </table>
+                    </div>
+
+                    <div class="areaBotones">
+                        <button class="botonUsuario" type="button">Crear nuevo mascota</button>
+                        <button class="botonUsuario" type="button">Borrar mascota</button>
+                    </div>
+
+
+
+                </div>
+
+                <div class="columna30">
+                    <div>
+                        <img class= "mascotaImagen" src="../public/img/expedienteImegenEjemplo.jpg">
+                    </div>
+
+                    <div class="listaSeleccion">
+                            <label for="razas">Raza:</label>
+                            <select name="raza" id="raza">
+                              <option value="akita">Akita</option>
+                              <option value="beagle">Beagle</option>
+                              <option value="boxer">Boxer</option>
+                              <option value="goldenretriever">Golden Retriever</option>
+                            </select>
+                            <br>
+                          </form>
+                    </div>
+
+                    <div>
+                        <p class="calificacionEstrellas"> &#11088; &#11088; &#11088; </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="derechos">
+        <p>coderiders &#169</p>
+    </div>
+
+    </body>
+
+
+
+</html>

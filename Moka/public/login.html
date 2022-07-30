@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../public/styles/hojaEstiloAdministrativa.css">
+</head>
+
+<body class="fondoCeleste">
+    <div class="fondoLogin">
+
+    <div>
+        <img class="logo" src="../public/img/logoMoka.PNG" alt="">
+    </div>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+			<button id="button1" type="button" class="toggle-btn" onclick="leftClick()">Usuario</button>
+			<button id="button2" type="button" class="toggle-btn" onclick="rightClick()">Admin</button>
+		</div>
+	</div>
+    <div class="container">
+    <div id="user" class="user">
+        <form class="form">
+            <label for="">PIN</label>
+            <input type="text" class="input-field" placeholder="Ingrese su pin">
+            <button id="login" class="btn">ingresar</button>
+            <!-- Codigo que se debe eliminar -->
+
+            <a href="../public/reservasNuevas.html">  temporal Ingresar</a>
+        </form>
+    </div>
+    <div id="admin" class="admin">
+        <form class="form">
+            <label for="">Usuario</label>
+            <input type="text" class="input-field" placeholder="Usuario">
+            <label for="">Contraseña</label>
+            <input type="password" class="input-field" placeholder="Contraseña">
+            <button id="login" class="btn">ingresar</button>
+            
+            <!-- Codigo que se debe eliminar -->
+            <a href="../public/reservasNuevas.html"> temporal Ingresar</a>
+
+        </form>
+    </div>
+
+    </div>
+
+</div>
+
+
+    <script src="../src/MokaSite.js"></script>
+</body>
+
+</html>

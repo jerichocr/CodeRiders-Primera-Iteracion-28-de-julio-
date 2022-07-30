@@ -1,0 +1,473 @@
+:root{
+    --color-botones: rgb(7, 49, 89);
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+}
+.navbar-father{
+    height: 10vh;
+    background-color: rgb(206, 227, 217);
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(206, 227, 217);
+    color: rgb(206, 227, 217);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    width: 150px;
+    margin: .5rem;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar-links li:hover {
+    background-color: var(--color-botones);
+    border-radius: 10px;
+}
+.navbar-links li:hover a{
+    color: rgb(206, 227, 217);
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(118, 117, 117);
+    border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* FIN NAVBAR: */
+
+.wrapper01 {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/Fondo1C.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-moka {
+    width: 90%;
+}
+
+.izquierda-logo {
+    width: 60%;
+    padding: 9% 8% 5% 8%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="izquierda-logo"] {
+      width: 50%;
+      padding: 20px 20px 20px 20px;
+    }
+}
+
+.derecha-perro {
+    width: 40%;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="derecha-perro"] {
+      width: 50%;
+    }
+}
+
+.perro01 {
+    padding-left: 10%;
+    padding-top: 10%;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="perro01"] {
+      width: 80%;
+      padding-top: 50%;
+    }
+}
+
+
+.textopequeno {
+font-size: 14px;
+padding-top: 20px;
+padding-bottom: 30px;
+}
+
+.botonmorado {
+    font-size: 11px;
+    background-color: var(--color-botones);
+    color: white;
+    padding: 10px 70px 10px 70px;
+    border-radius: 20px;
+    border-bottom: none;
+    border-style: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+/* Servicios */
+
+.wrapper02 {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/Fondo1B.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carac-encabezado {
+    text-align: center;
+    width: 100%;
+    padding: 75px 0px 20px 0px;
+    font-size: 30px;
+}
+
+.servicios {
+width: 29%;
+padding: 4% 4% 4% 4%;
+text-align: center;
+background-color: rgba(255, 255, 255, 0.837);
+border-radius: 30px;
+font-size: 14px;
+margin: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="servicios"] {
+      width: 100%;
+      padding: 5px 10px 5px 10px;
+    }
+}
+
+.caractitulos {
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 22px;
+}
+
+
+.icono-carac {
+width: 80%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="icono-carac"] {
+      width: 40%;
+    }
+}
+
+
+.quienes-titulo {
+    font-size: 30px;
+}
+
+.quienes {
+    background-color: rgb(206, 227, 217);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.wrapper04 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(206, 227, 217);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.fotos-dr {
+    background-color: white;
+    border: rgb(206, 227, 217);
+    border-radius: 30px;
+    border-style:solid;
+    border-width: 10px;
+    width: 33%;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 11px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class ="fotos-dr"] {
+          width: 100%;
+        }
+    }
+
+.foto-carac {
+        width: 40%;
+        }
+
+.carac-personas {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    }
+
+.caractitulos {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+.wrapper05 {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/Fondo1B.png);
+}
+
+.hotel-titulo {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+}
+
+.texto-hotel {
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+.imagen-hotel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 55px;
+    width: 80%;
+}
+
+.wrapper06 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(206, 227, 217);
+}
+
+.como-llegar {
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="como-llegar"] {
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: justify;
+    }
+}
+
+.mapouter {
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="mapouter"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.como-titulo {
+    width: 100%;
+    font-size: 40px;
+    padding: 50px 0px 20px 0px;
+}
+
+.wrapper07 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacto {
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="contacto"] {
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: justify;
+    }
+}
+
+.formulario {
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class ="formulario"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.contacto-titulo {
+    width: 100%;
+    font-size: 40px;
+    padding: 50px 0px 20px 0px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  .redesLogo  {
+    width: 75px;
+    padding-right: 20px;
+  }

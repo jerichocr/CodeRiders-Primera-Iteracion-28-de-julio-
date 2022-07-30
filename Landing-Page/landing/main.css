@@ -1,0 +1,351 @@
+:root{
+    --color-botones: rgb(51, 36, 251);
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+}
+.navbar-father{
+    height: 10vh;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.logo {
+    width: 150px;
+    margin: .5rem;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar-links li:hover {
+    background-color: var(--color-botones);
+    border-radius: 10px;
+}
+.navbar-links li:hover a{
+    color: white;
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(118, 117, 117);
+    border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+    /* codigo agregado por Jerico */
+
+    .wrapper01 {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(img/fondocurva01.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .solucion {
+        width: 50%;
+        padding: 9% 8% 5% 8%;
+    }
+
+    .celular {
+        width: 50%;
+        position: relative;
+    }
+
+    .dismovil {
+        padding-left: 10%;
+        height: 92%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class ="dismovil"] {
+        height: 75%;
+        }
+    }
+
+    .textopequeno {
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    }
+
+    .botonmorado {
+        font-size: 11px;
+        background-color: var(--color-botones);
+        color: white;
+        padding: 10px 70px 10px 70px;
+        border-radius: 20px;
+        border-bottom: none;
+        border-style: none;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+
+    .carac-encabezado {
+        text-align: center;
+        padding: 75px 0px 20px 0px;
+        background-color: rgb(255, 241, 253);
+    }
+
+    .wrapper02 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 250px;
+        background-image: url(img/rosacurva01.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caracteristicas {
+    width: 33%;
+    padding: 50px 30px 20px 30px;
+    text-align: center;
+    font-size: 13px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class ="caracteristicas"] {
+          width: 100%;
+          padding: 5px 10px 5px 10px;
+        }
+    }
+
+    .caractitulos {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+
+    .icono-carac {
+    width: 40%;
+    }
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class ="icono-carac"] {
+          width: 15%;
+        }
+    }
+    
+    .wrapper03 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+        padding-top: 55px;
+    }
+
+    .servicios01 {
+        width: 40%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .servicios02 {
+        width: 60%;
+        padding: 0px 120px 0px 0px;
+    }
+
+    .servicios-dis {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .quienes-titulo {
+        background-image: url(img/rosacurva02.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 200px;
+    }
+    .quienes {
+        text-align: center;
+        align-content: center;
+        padding-top: 160px;
+        padding-bottom: 40px;
+    }
+
+    .wrapper04 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .fotos-bn {
+        background-color: white;
+        border: rgb(255, 241, 253);
+        border-style:solid;
+        border-width: 10px;
+        width: 25%;
+        text-align: center;
+        font-size: 11px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class ="fotos-bn"] {
+              width: 100%;
+            }
+        }
+
+    .foto-carac {
+            width: 50%;
+            padding-top: 10%;
+            }
+
+    .fondo-contacto {
+    color: white;
+    background-image: linear-gradient(90deg,rgb(93, 39, 229), rgb(175, 43, 177));
+    padding: 3% 5% 5% 5%;
+    }
+
+    .carac-personas {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        }
+
+    .wrapper05 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 14px;
+    }
+    .info-titulo{
+        text-align: center;
+        padding-bottom: 45px;
+    }
+
+    .infodere {
+        width: 50%;
+        line-height: 30px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class ="infodere"] {
+          width: 100%;
+          padding-bottom: 30px;
+        }
+    }
+
+
+    .infodere h2{
+        margin-bottom: 10px;
+    }
+
+    .infoizq {
+        width: 50%;
+        line-height: 30px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class ="infoizq"] {
+          width: 100%;
+          padding-bottom: 30px;
+        }
+    }
+
+    .info-form{
+        width: 100%;
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+    .info-msg{
+        width: 100%;
+        height: 100px;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+    
+

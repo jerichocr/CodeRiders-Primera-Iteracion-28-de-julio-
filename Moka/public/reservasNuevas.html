@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/styles/hojaEstiloAdministrativa.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+<!-- Inicio del area de menu superior -->
+
+<div class="wrapperSuperior">
+
+
+    <div class="logoSuperior">
+        <img class="logoMoka" src="../public/img/logoMokaPequeno.PNG">
+    </div>
+
+    <div class="barraUsuario">
+        <div><a class="Activoa" href=""><img class="logoUsuario" src="../public/img/usuario.png">Usuario Activo</a></div>
+    </div>
+
+    <div class="barraBuscar">
+        <input type="text" placeholder="  &#128269; Buscar">
+    </div>
+
+</div>
+
+    <div class="wrapperCentral">
+
+        <!-- Inicio del area de menu lateral -->
+
+        <div class="menuLateral">
+            <!-- Inicio del area de menu lateral -->
+            <div>
+                
+                <div class="barraLateral"><a href="citasNuevas.html"><img class="iconosBarra" src="../public/img/cita.png"> Cita nueva</a></div>
+                <div class="barraLateral"><a href="expedienteMascota.html"><img class="iconosBarra" src="../public/img/mascota.png"> Expediente mascotas</a></div>
+                <div class="barraLateral"><a href="perfilCliente.html"><img class="iconosBarra" src="../public/img/cliente.png"> Cliente</a></div>
+                <div class="barraLateral"><a href="calendarioCitas.html"><img class="iconosBarra" src="../public/img/calendario.png"> Calendario citas</a></div>
+                <div class="barraLateral"><a href="calendarioReservas.html"><img class="iconosBarra" src="../public/img/hotel.png"> Calendario reservas</a></div>
+
+            </div>
+
+            
+        </div>
+
+        <!-- Inicio del area usuario en la que se agrega el codigo dentro del div -->
+        
+        <div class="areaUsuario">
+            <h1>Nueva Reserva </h1>
+
+            <div class="wrapper30-65">
+
+                <div class="columna65">
+
+                    <div class="recervas">
+                     <label for="text"> Nombre de la mascota:</label><br>
+                    <input type="text" id="text">
+                    </div>
+
+                    <div >
+                    <label for="text"> Nombre del dueño:</label><br>
+                    <input type="text" id="text">
+                    </div>
+
+                    <div>
+                    <label for="start">Fecha de entrada:</label><br>
+                    <input type="date" id="start" name="trip-start"
+                    value="2022-07-22"
+                    min="2022-01-01" max="2022-12-31">
+                    </div>
+
+
+                    <div>
+                    <label for="start">Fecha de salida:</label><br>
+    
+                    <input type="date" id="start" name="trip-start"
+                    value="2022-07-22"
+                    min="2022-01-01" max="2022-12-31">
+                    </div>
+                    
+                    <div>
+                    <label for="appt-time">Hora de llegada: </label><br>
+                    <input id="appt-time" type="time" name="appt-time" value="13:30">
+                    </div>
+
+                    <div>
+                    <label for="textcomentarios">Agregar comentarios de la reserva</label><br>
+                    <textarea id="textcomentarios" cols="67" rows="12"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="columna30">
+                        <!-- inicio calendario ol para lista ordenada-->
+                        <div class="wrapperCalendario">
+                            <h1>Julio</h1>
+                            <ol class="calendario">
+                              <li class="diaSemana">lu.</li>
+                              <li class="diaSemana">ma.</li>
+                              <li class="diaSemana">mi.</li>
+                              <li class="diaSemana">ju.</li>
+                              <li class="diaSemana">vi.</li>
+                              <li class="diaSemana">sa.</li>
+                              <li class="diaSemana">do.</li>
+                              
+                              <li class="primerDia">1</li>
+                              <li>2</li>
+                              <li>3</li>
+                              <li>4</li>
+                              <li>5</li>
+                              <li>6</li>
+                              <li>7</li>
+                              <li>8</li>
+                              <li>9</li>
+                              <li>10</li>
+                              <li>11</li>
+                              <li>12</li>
+                              <li>13</li>
+                              <li>14</li>
+                              <li>15</li>
+                              <li>16</li>
+                              <li>17</li>
+                              <li>18</li>
+                              <li>19</li>
+                              <li>20</li>
+                              <li>21</li>
+                              <li>22</li>
+                              <li>23</li>
+                              <li>24</li>
+                              <li>25</li>
+                              <li>26</li>
+                              <li>27</li>
+                              <li>28</li>
+                              <li>29</li>
+                              <li>30</li>
+                              <li>31</li>
+                            </ol>
+                          </div>
+      
+                             <!-- Fin del calendario -->
+                      </div>
+                </div>
+
+               <div class="areaBotones">
+                <button class="botonUsuario" type="button">Crear nueva reserva</button>
+                <button class="botonUsuario" type="button">Borrar reserva</button>
+            </div>
+
+
+            </div>
+
+
+        </div>
+            
+
+    </div>
+    
+
+    <div class="derechos">
+        <p>coderiders &#169</p>
+    </div>
+
+    </body>
+
+
+
+</html>
